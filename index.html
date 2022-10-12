@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="container-fluid text-center text-white bg-dark p-2">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-light">
+                <h5 class="mt-1">Search for a City:</h5>
+                <div class="input-group mb-3">
+                    <input id="enter-city" type="text" class="form-control" placeholder="Enter a city" aria-label ="Enter a city">
+                    <div class="input-group-append"></div>
+                        <button class="btn btn-primary" type="button" id="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+                <form id="history"></form>
+            </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
